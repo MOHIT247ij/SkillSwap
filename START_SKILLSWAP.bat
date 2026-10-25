@@ -1,5 +1,5 @@
 @echo off
-title SkillSwap - Server + Website
+title SkillSwap - Live Log
 cd /d "%~dp0"
 echo.
 echo  ==========================================
@@ -12,9 +12,12 @@ echo [2/3] Packages check kar rahe hain...
 if not exist "node_modules" call npm install
 if not exist "server\node_modules" call npm install --prefix server
 if not exist "client\node_modules" call npm install --prefix client
+if not exist "logs" mkdir logs
 echo [3/3] Server + Website start... browser 30 second mein khulega
-echo  (Is window ko BAND MAT KARNA. Band karne ke liye Ctrl+C dabao)
-echo.
+start "SkillSwap Engine" /min cmd /c "npm run dev > logs\skillswap.log 2>&1"
 start "" /min cmd /c "timeout /t 30 /nobreak >NUL & start http://localhost:5174"
-call npm run dev
-pause
+echo.
+echo  Neeche live log dikhega. Band karna ho toh STOP_SKILLSWAP.bat chalao.
+echo.
+timeout /t 3 /nobreak >NUL
+powershell -NoProfile -Command "Get-Content -Path 'logs\skillswap.log' -Wait -Tail 60"

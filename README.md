@@ -3,7 +3,7 @@
 A peer-to-peer **skill exchange platform** built with the **MERN stack + Socket.io + WebRTC**.
 Students list skills they can teach and skills they want to learn. A two-way matching algorithm finds perfect swaps, and users chat in real time, video call, schedule sessions, verify skills with quizzes, and rate each other.
 
-![SkillSwap landing page](docs/screenshots/landing.png)
+![SkillSwap landing page](docs/screenshots/landing.jpg)
 
 ## ✨ Features
 
@@ -23,6 +23,36 @@ Students list skills they can teach and skills they want to learn. A two-way mat
 | 📈 Public Trends | Most wanted / offered skills, **demand vs supply gap**, weekly swap activity |
 | 🛡️ Admin | Analytics dashboard, ban/unban users, moderate reviews, **CSV export** (users, swaps, sessions, reviews) for Excel / Power BI |
 | 🎨 UI | Tailwind CSS, dark mode, animations, skeleton loaders, mobile bottom navigation |
+
+## 📸 Screenshots
+
+| Dashboard | Explore (smart matching) |
+|---|---|
+| ![Dashboard](docs/screenshots/dashboard.jpg) | ![Explore](docs/screenshots/explore.jpg) |
+
+| Real-time Chat + Video Call | SkillBot (AI roadmap) |
+|---|---|
+| ![Chat](docs/screenshots/chat.jpg) | ![SkillBot](docs/screenshots/skillbot.jpg) |
+
+| Leaderboard | My Stats (badges & analytics) |
+|---|---|
+| ![Leaderboard](docs/screenshots/leaderboard.jpg) | ![My Stats](docs/screenshots/my-stats.jpg) |
+
+| Skill Verification | Quiz |
+|---|---|
+| ![Skill Quiz](docs/screenshots/skill-quiz.jpg) | ![Quiz question](docs/screenshots/quiz-question.jpg) |
+
+| Skill Demand Trends | Admin Dashboard + CSV Export |
+|---|---|
+| ![Trends](docs/screenshots/trends.jpg) | ![Admin](docs/screenshots/admin.jpg) |
+
+| Sessions | Login (Google + email) |
+|---|---|
+| ![Sessions](docs/screenshots/sessions.jpg) | ![Login](docs/screenshots/login.jpg) |
+
+| 🌙 Dark mode |
+|---|
+| ![Dark mode](docs/screenshots/dashboard-dark.jpg) |
 
 ## 🛠️ Tech Stack
 
